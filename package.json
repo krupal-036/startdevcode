@@ -1,0 +1,35 @@
+{
+  "name": "startdevcode",
+  "version": "1.0.0",
+  "description": "Scaffold new projects from your personal boilerplate templates (React, Node, NestJS, Next.js, MERN, ...)",
+  "type": "module",
+  "bin": {
+    "startdevcode": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "dev": "tsc -w"
+  },
+  "keywords": ["cli", "scaffold", "boilerplate", "generator", "create-app"],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "prompts": "^2.4.2",
+    "chalk": "^5.3.0",
+    "tar": "^7.4.3",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/node": "^20.14.15",
+    "@types/prompts": "^2.4.9",
+    "@types/fs-extra": "^11.0.4"
+  }
+}
