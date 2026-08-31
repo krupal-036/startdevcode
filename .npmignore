@@ -1,0 +1,14 @@
+src/
+tests/
+test/
+.github/
+.vscode/
+.git/
+.gitignore
+tsconfig.json
+build.mjs
+*.ts
+*.map
+README-dev.md
+.env
+.env.*
